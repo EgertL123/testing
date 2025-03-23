@@ -23,7 +23,7 @@ def test():
     )
 
     try:
-        # Wait for and find the "Reject All" button
+        # Wait and find the "Reject All" button
         reject_button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, '//*[text()="Reject all"]'))
         )
